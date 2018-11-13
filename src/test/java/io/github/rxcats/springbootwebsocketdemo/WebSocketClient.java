@@ -48,7 +48,7 @@ public class WebSocketClient {
     public void connect(String serverUri) {
         try {
             userSession = container.connectToServer(this, new URI(serverUri));
-            userSession.setMaxTextMessageBufferSize(Integer.MAX_VALUE);
+            userSession.setMaxTextMessageBufferSize(8192);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -82,7 +82,5 @@ public class WebSocketClient {
             e.printStackTrace();
         }
     }
-
-
 
 }

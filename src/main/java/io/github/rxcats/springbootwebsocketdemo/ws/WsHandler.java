@@ -24,7 +24,6 @@ public class WsHandler extends TextWebSocketHandler {
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         log.info("connection established");
         log.info("session : {}", session);
-        //super.afterConnectionEstablished(session);
     }
 
     @Override
@@ -39,13 +38,11 @@ public class WsHandler extends TextWebSocketHandler {
     public void handleTransportError(WebSocketSession session, Throwable exception) throws Exception {
         log.warn("transport error");
         log.info("session : {}", session);
-        //super.handleTransportError(session, exception);
     }
 
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
         log.info("connection closed");
         log.info("session : {}", session);
-        //super.afterConnectionClosed(session, status);
     }
 }

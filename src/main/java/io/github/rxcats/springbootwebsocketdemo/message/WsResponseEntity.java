@@ -5,17 +5,17 @@ import lombok.Data;
 @Data
 public class WsResponseEntity<T> {
 
-    private String cmd = "";
+    String cmd = "";
 
-    private int code = ResultCode.ok.code;
+    int code = ResultCode.ok.code;
 
-    private T result;
+    T result;
 
-    private String message = "";
+    String message = "";
 
-    private String details = "";
+    String details = "";
 
-    private long timestamp = System.currentTimeMillis();
+    long timestamp = System.currentTimeMillis();
 
     private WsResponseEntity() {
 

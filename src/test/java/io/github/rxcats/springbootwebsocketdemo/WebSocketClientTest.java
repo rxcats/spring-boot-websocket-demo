@@ -31,6 +31,8 @@ public class WebSocketClientTest {
 
         String response = client.syncSendMessage(json);
 
+        log.info("cli response : {}", response);
+
         client.disconnect();
 
     }

@@ -1,4 +1,4 @@
-package io.github.rxcats.springbootwebsocketdemo.controller;
+package io.github.rxcats.springbootwebsocketdemo.controller.ws;
 
 import org.springframework.web.socket.WebSocketSession;
 
@@ -24,7 +24,7 @@ public class HelloController {
     }
 
     @WsMethod(uri = "/void", description = "void")
-    public void v() {
+    public void voidReturn() {
         log.info("void");
     }
 

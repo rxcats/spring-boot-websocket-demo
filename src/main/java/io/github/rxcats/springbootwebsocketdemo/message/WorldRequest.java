@@ -1,13 +1,13 @@
 package io.github.rxcats.springbootwebsocketdemo.message;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.experimental.FieldDefaults;
+import javax.validation.constraints.Min;
 
-@FieldDefaults(level = AccessLevel.PRIVATE)
+import lombok.Data;
+
 @Data
 public class WorldRequest {
 
+    @Min(2)
     long id;
 
 }
