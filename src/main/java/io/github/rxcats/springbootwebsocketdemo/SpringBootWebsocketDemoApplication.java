@@ -14,7 +14,6 @@ import org.springframework.web.socket.config.annotation.EnableWebSocket;
 
 @EnableAsync
 @EnableScheduling
-@EnableWebSocket
 @SpringBootApplication
 public class SpringBootWebsocketDemoApplication {
 
